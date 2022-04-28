@@ -1,0 +1,141 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+}
+.menu{ 
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items:center;
+    flex-flow: wrap;
+    grid-area: nav;
+    
+}
+a{
+    background-color: darkorange;
+    border-style: solid;
+}
+.fondo{
+    background-image: url(https://okdiario.com/img/2021/10/16/inspiring-view-of-sunset-light.jpg);
+    background-repeat: inherit;
+    text-align: center;
+}
+.imagenverduleria{ 
+    border-style: solid;
+    width:1345px;
+}
+.titulo{
+    grid-area: header;
+}
+.titulovioleta{
+    font-weight: bolder;
+    font-size: 100px;
+    color:darkmagenta;
+    
+    
+}
+.bienvenido{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.productos{
+    list-style-type: none;
+    text-decoration: solid;
+    font-weight: bold;
+    background-color: black;
+    border-color: azure;
+    border-style: double;
+    grid-area:section;
+
+}
+.productos2{
+    list-style-type: none;
+    text-decoration: solid;
+    font-weight: bold;
+    background-color: black;
+    border-color: azure;
+    border-style: double;
+    grid-area: section2;
+}
+h3{
+    color:maroon;
+    font-weight: bold;
+}
+h2{
+    background-color:gold;  
+    border-style: solid;
+}
+.borde{
+    border-style: solid;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.textoblanco{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 300px;
+    margin-top: 50px;
+}
+.grilla{
+    height: 100vh;
+    display:grid;
+    grid-template-areas:
+            "nav nav"
+            "header header"
+            "section section2"
+            "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+}
+.piedepagina{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 250px;
+    margin-right: 250px;
+    display: flex;
+    justify-content: space-around;
+    grid-area: footer;
+}
+
+@media screen and (max-width:768px) {
+    a {
+        background-color:red;
+       
+    }
+    .grilla{
+        grid-template-areas:
+        "nav"
+        "header"
+        "section"
+        "section2"
+        "footer";
+    }
+    .titulovioleta{
+        font-size: 350%;
+    }
+}

@@ -35,8 +35,6 @@ a{
     font-weight: bolder;
     font-size: 100px;
     color:darkmagenta;
-    
-    
 }
 .bienvenido{
     font-style: italic;
@@ -51,6 +49,7 @@ a{
     border-color: azure;
     border-style: double;
     grid-area:section;
+    background-image: radial-gradient(yellow,orange);
 
 }
 .productos2{
@@ -61,17 +60,24 @@ a{
     border-color: azure;
     border-style: double;
     grid-area: section2;
+    background-image: radial-gradient(yellow,orange);
 }
 h3{
-    color:maroon;
+    color:rgb(250, 6, 6);
     font-weight: bold;
+    transition: color 2s;
+}
+h3:hover{
+    color:rgb(7, 0, 1);
 }
 h2{
     background-color:gold;  
     border-style: solid;
+    background-image: radial-gradient(yellow,black);
 }
 .borde{
     border-style: solid;
+    border-color: black;
 }
 a{
     text-decoration: none;

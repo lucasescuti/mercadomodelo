@@ -10,167 +10,174 @@
     <link rel="stylesheet" href="css/estilos.css"/>
 </head>
 <body class="fondo">
-     <nav class="menu">
-         <a href="index.html" class="cuadrado">inicio</a>
-         <a href="producto.html" class="cuadrado">producto</a>
-         <a href="quienessomos.html" class="cuadrado">quienes somos</a>
-         <a href="contacto.html" class="cuadrado">contacto</a>
-         <a href="galeria.html" class="cuadrado">galeria</a>
+    <div class="grilla">
+     <nav class="menu container-fluid">
+         <a href="index.html" class="col-md-2">inicio</a>
+         <a href="producto.html" class="col-md-2">producto</a>
+         <a href="quienessomos.html" class="col-md-2">quienes somos</a>
+         <a href="contacto.html" class="col-md-2">contacto</a>
+         <a href="galeria.html" class="col-md-2">galeria</a>
      </nav>
+   <header class="titulo">
      <h1 class="titulovioleta animate__animated animate__animated animate__rubberBand">
      <img src="galeria/cereza.png" alt="cereza" width="50"height="50">
      Mercado Modelo
      <img src="galeria/cereza.png" alt="cereza" width="50"height="50">
      </h1>
+     <video controls autoplay loop src="galeria/y2mate.com - Spot Publicitario - Mercado Modelo_1080p.mp4" width="600" height="600" class="img-thumbnail"></video>
+   </header>
      <section class="productos">
-             <video controls autoplay loop src="galeria/y2mate.com - Spot Publicitario - Mercado Modelo_1080p.mp4" width="600" height="600"></video>
-             <h2> NUESTROS PRODUCTOS</h2>
-         <ul type="square" class="textoblanco">
-             <h3>VERDURAS</h3>
-             <ol type="1"  class="flex" >
-             <div class="column">
-                 <p>Papas</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/papas.jpg" alt="papas" class="borde">
-             </div>
-             <div class="column">
-                 <p>Cebolla</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/cebolla.jpg" alt="cebolla" class="borde">
-             </div>
-             <div class="column">
-                 <p>Brocoli</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/brocoli.jpg" alt="brocoli" class="borde">
-             </div>
-             <div class="column">
-                 <p>Zanahoria</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/zanahoria.jpg" alt="zanahoria" class="borde">
-             </div>
-             <div class="column">
-                 <p>Remolacha</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/remolacha.jpg" alt="remolacha" class="borde">
-             </div>
-             </ol>
-             <h3>FRUTAS</h3>
-             <ol type="1"  class="flex" >
-             <div class="column">
-                 <p>Naranjas</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/naranjas.jpg" alt="naranjas" class="borde">
-             </div>
-             <div class="column">
-                 <p>Bananas</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/bananas.jpg" alt="banana" class="borde">
-             </div>
-             <div class="column">
-                 <p>Kiwi</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/kiwi.jpg" alt="kiwi" class="borde">
-             </div>
-             <div class="column">
+        <ul type="square" class="textonegro">
+            <h3>VERDURAS</h3>
+            <ol type="1" class="flex container-fluid row" >
+            <div class="column col-md-5">
+                <p>Papas</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/papas.jpg" alt="papas" class="borde rounded-circle">
+            </div>
+            <div class="column col-md-5">
+                <p>Cebolla</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/cebolla.jpg" alt="cebolla" class="borde rounded-circle">
+            </div>
+            <div class="column col-md-5">
+                <p>Brocoli</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/brocoli.jpg" alt="brocoli" class="borde rounded-circle">
+            </div>
+            <div class="column col-md-5">
+                <p>Zanahoria</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/zanahoria.jpg" alt="zanahoria" class="borde rounded-circle">
+            </div>
+            <div class="column col-md-5">
+                <p>Remolacha</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/remolacha.jpg" alt="remolacha" class="borde rounded-circle">
+            </div>
+            </ol>
+        </ul>
+    </section>
+    <section class="productos2">
+        <ul type="square" class="textonegro">
+            <h3>FRUTAS</h3>
+            <ol type="1" class="flex container-fluid row">
+            <div class="column col-md-5">
+            <p>Naranjas</p>
+            <form>
+                <select>
+                    <option>1kl</option>
+                    <option>2kl</option>
+                    <option>3kl</option>
+                    <option>4kl</option>
+                    <option>5kl</option>
+                </select>
+            </form>
+            <img src="galeria/naranjas.jpg" alt="naranja" class="borde rounded-circle" >
+            </div>
+            <div class="column col-md-5">
+                <p>Bananas</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/bananas.jpg" alt="banana" class="borde rounded-circle">
+            </div>
+            <div class="column col-md-5">
+                <p>Kiwi</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/kiwi.jpg" alt="kiwi" class="borde rounded-circle">
+            </div>
+            <div class="column col-md-5">
                  <p>Sandia</p>
                  <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/sandia.jpg" alt="sandia" class="borde">
-             </div>
-             <div class="column">
-                 <p>Piña</p>
-                 <form>
-                     <select>
-                         <option>1kl</option>
-                         <option>2kl</option>
-                         <option>3kl</option>
-                         <option>4kl</option>
-                         <option>5kl</option>
-                     </select>
-                 </form>
-                 <img src="galeria/piña.jpg" alt="piña" class="borde">
-             </div>
-             </ol>
-         </ul>
-     </section>
-     <footer class="menu">
-        <a href="index.html" class="cuadrado">inicio</a>
-        <a href="producto.html" class="cuadrado">producto</a>
-        <a href="quienessomos.html" class="cuadrado">quienes somos</a>
-        <a href="contacto.html" class="cuadrado">contacto</a>
-        <a href="galeria.html" class="cuadrado">galeria</a>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/sandia.jpg" alt="sandia" class="borde rounded-circle">
+            </div>
+            <div class="column col-md-5">
+                <p>Piña</p>
+                <form>
+                    <select>
+                        <option>1kl</option>
+                        <option>2kl</option>
+                        <option>3kl</option>
+                        <option>4kl</option>
+                        <option>5kl</option>
+                    </select>
+                </form>
+                <img src="galeria/piña.jpg" alt="piña" class="borde rounded-circle">
+            </div>
+            </ol>
+        </ul>
+    </section>       
+     <footer class="piedepagina container-fluid">
+        <a href="index.html" class="col-md-2">inicio</a>
+        <a href="producto.html" class="col-md-2">producto</a>
+        <a href="quienessomos.html" class="col-md-2">quienes somos</a>
+        <a href="contacto.html" class="col-md-2">contacto</a>
+        <a href="galeria.html" class="col-md-2">galeria</a>
      </footer>
+    </div>
      <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

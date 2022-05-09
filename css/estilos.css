@@ -102,7 +102,6 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 300px;
     margin-top: 50px;
 }
 .grilla{

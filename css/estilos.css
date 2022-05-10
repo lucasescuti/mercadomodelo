@@ -8,16 +8,21 @@
     text-align: center;
     text-decoration: none;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     flex-direction: row;
     align-items:center;
-    flex-flow: wrap;
+    flex-wrap: nowrap;
     grid-area: nav;
     
 }
 a{
     background-color: darkorange;
     border-style: solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
 }
 .fondo{
     background-image: url(https://okdiario.com/img/2021/10/16/inspiring-view-of-sunset-light.jpg);
@@ -35,6 +40,9 @@ a{
     font-weight: bolder;
     font-size: 100px;
     color:darkmagenta;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .bienvenido{
     font-style: italic;
@@ -71,13 +79,16 @@ h3:hover{
     color:rgb(7, 0, 1);
 }
 h2{
-    background-color:gold;  
+    color:black;  
     border-style: solid;
-    background-image: radial-gradient(yellow,black);
+    background-image: radial-gradient(yellow,orange,rgb(92, 18, 92));
 }
 .borde{
     border-style: solid;
     border-color: black;
+}
+.borde:hover{
+    border-color:red;
 }
 a{
     text-decoration: none;
@@ -128,12 +139,14 @@ a{
     grid-area: footer;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:480px) {
     a {
         background-color:red;
        
     }
     .grilla{
+        display: flex;
+        flex-direction: column;
         grid-template-areas:
         "nav"
         "header"
@@ -142,6 +155,13 @@ a{
         "footer";
     }
     .titulovioleta{
-        font-size: 350%;
+        font-size: 200%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -1,21 +1,23 @@
-*{ 
+* {
     margin: 0%;
     padding: 0%;
 }
-.menu{ 
+
+.menu {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     flex-wrap: nowrap;
     grid-area: nav;
-    
+
 }
-a{
+
+a {
     background-color: darkorange;
     border-style: solid;
     display: flex;
@@ -24,43 +26,50 @@ a{
     justify-content: center;
 
 }
-.fondo{
+
+.fondo {
     background-image: url(https://okdiario.com/img/2021/10/16/inspiring-view-of-sunset-light.jpg);
     background-repeat: inherit;
     text-align: center;
 }
-.imagenverduleria{ 
+
+.imagenverduleria {
     border-style: solid;
-    width:1345px;
+    width: 1345px;
 }
-.titulo{
+
+.titulo {
     grid-area: header;
 }
-.titulovioleta{
+
+.titulovioleta {
     font-weight: bolder;
     font-size: 100px;
-    color:darkmagenta;
+    color: darkmagenta;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.bienvenido{
+
+.bienvenido {
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-.productos{
+
+.productos {
     list-style-type: none;
     text-decoration: solid;
     font-weight: bold;
     background-color: black;
     border-color: azure;
     border-style: double;
-    grid-area:section;
-    background-image: radial-gradient(yellow,orange,rgb(92, 18, 92));
+    grid-area: section;
+    background-image: radial-gradient(yellow, orange, rgb(92, 18, 92));
 
 }
-.productos2{
+
+.productos2 {
     list-style-type: none;
     text-decoration: solid;
     font-weight: bold;
@@ -68,99 +77,114 @@ a{
     border-color: azure;
     border-style: double;
     grid-area: section2;
-    background-image: radial-gradient(yellow,orange,rgb(92, 18, 92));
+    background-image: radial-gradient(yellow, orange, rgb(92, 18, 92));
 }
-h3{
-    color:rgb(250, 6, 6);
+
+h3 {
+    color: rgb(250, 6, 6);
     font-weight: bold;
     transition: color 2s;
 }
-h3:hover{
-    color:rgb(7, 0, 1);
+
+h3:hover {
+    color: rgb(7, 0, 1);
 }
-h2{
-    color:black;  
+
+h2 {
+    color: black;
     border-style: solid;
-    background-image: radial-gradient(yellow,orange,rgb(92, 18, 92));
+    background-image: radial-gradient(yellow, orange, rgb(92, 18, 92));
 }
-.borde{
+
+.borde {
     border-style: solid;
     border-color: black;
 }
-.borde:hover{
-    border-color:red;
+
+.borde:hover {
+    border-color: red;
 }
-a{
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-.textonegro{
-    color:black;
+
+.textonegro {
+    color: black;
     font-weight: bold;
     font-size: 30px;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
 }
-.formulario{
+
+.formulario {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-top: 50px;
 }
-.grilla{
+
+.grilla {
     height: 100vh;
-    display:grid;
+    display: grid;
     grid-template-areas:
-            "nav nav"
-            "header header"
-            "section section2"
-            "footer footer";
+        "nav nav"
+        "header header"
+        "section section2"
+        "footer footer";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
-.piedepagina{
+
+.piedepagina {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     flex-flow: wrap;
     grid-area: footer;
 }
 
 @media screen and (max-width:480px) {
     a {
-        background-color:red;
-       
+        background-color: red;
+
     }
-    .grilla{
+
+    .grilla {
         display: flex;
         flex-direction: column;
         grid-template-areas:
-        "nav"
-        "header"
-        "section"
-        "section2"
-        "footer";
+            "nav"
+            "header"
+            "section"
+            "section2"
+            "footer";
     }
-    .titulovioleta{
+
+    .titulovioleta {
         font-size: 200%;
         display: flex;
         flex-direction: row;
-        
+
     }
-    .menu{
+
+    .menu {
         display: flex;
         flex-direction: column;
     }

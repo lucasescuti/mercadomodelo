@@ -1,0 +1,84 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+/*variables*/
+body {
+  background-image: url(https://okdiario.com/img/2021/10/16/inspiring-view-of-sunset-light.jpg);
+  background-repeat: inherit;
+  text-align: center; }
+  body div.grilla {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "nav nav" "header header" "section section2" "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr); }
+    body div.grilla nav {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      grid-area: nav; }
+      body div.grilla nav a {
+        background-color: #ff8c00;
+        border-style: solid;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-decoration: none;
+        color: black; }
+    body div.grilla header {
+      grid-area: header; }
+      body div.grilla header h1 {
+        font-weight: bolder;
+        font-size: 100px;
+        color: #8b008b;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+      body div.grilla header p {
+        font: italic Arial, Helvetica, sans-serif bold; }
+      body div.grilla header h2 {
+        color: #000000;
+        border-style: solid;
+        background-image: radial-gradient(#ffff00, #ffa500, #5c125c); }
+    body div.grilla section {
+      list-style-type: none;
+      text-decoration: solid;
+      font-weight: bold;
+      background-color: #000000;
+      border-color: azure;
+      border-style: double;
+      grid-area: section;
+      background-image: radial-gradient(#ffff00, #ffa500, #5c125c); }
+      body div.grilla section ul {
+        color: #000000;
+        font-weight: bold;
+        font-size: 30px; }
+        body div.grilla section ul h3 {
+          color: #fa0606;
+          font-weight: bold;
+          transition: color 2s; }
+          body div.grilla section ul h3:hover {
+            color: #070001; }
+        body div.grilla section ul ol {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around; }
+          body div.grilla section ul ol div {
+            display: flex;
+            flex-direction: column; }
+            body div.grilla section ul ol div img {
+              border-style: solid;
+              border-color: black; }
+              body div.grilla section ul ol div img:hover {
+                border-color: red; }
+    body div.grilla section.productos2 {
+      grid-area: section2; }

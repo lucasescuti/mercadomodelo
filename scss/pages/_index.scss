@@ -1,0 +1,129 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*variables*/
+$cool-darkorange: #ff8c00;
+$cool-darkmagenta: #8b008b;
+$text-font: italic Arial, Helvetica, sans-serif bold;
+$cool-black: #000000;
+$cool-radial: radial-gradient(#ffff00, #ffa500, #5c125c);
+
+body {
+    background-image: url(https://okdiario.com/img/2021/10/16/inspiring-view-of-sunset-light.jpg);
+    background-repeat: inherit;
+    text-align: center;
+
+    div.grilla {
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "nav nav"
+            "header header"
+            "section section2"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+
+        nav {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+            grid-area: nav;
+
+            a {
+                background-color: $cool-darkorange;
+                border-style: solid;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        header {
+            grid-area: header;
+
+            h1 {
+                font-weight: bolder;
+                font-size: 100px;
+                color: $cool-darkmagenta;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            p {
+                font: $text-font;
+            }
+
+            h2 {
+                color: $cool-black;
+                border-style: solid;
+                background-image: $cool-radial;
+            }
+        }
+
+        section {
+            list-style-type: none;
+            text-decoration: solid;
+            font-weight: bold;
+            background-color: $cool-black;
+            border-color: azure;
+            border-style: double;
+            grid-area: section;
+            background-image: $cool-radial;
+
+            ul {
+                color: $cool-black;
+                font-weight: bold;
+                font-size: 30px;
+
+                h3 {
+                    color: rgb(250, 6, 6);
+                    font-weight: bold;
+                    transition: color 2s;
+
+                    &:hover {
+                        color: rgb(7, 0, 1);
+                    }
+                }
+
+                ol {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        img {
+                            border-style: solid;
+                            border-color: black;
+
+                            &:hover {
+                                border-color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.productos2 {
+            grid-area: section2;
+        }
+
+    }
+}
